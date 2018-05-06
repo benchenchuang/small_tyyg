@@ -1,0 +1,33 @@
+<!--pages/personal/personal.wxml-->
+<view>
+  <view class="vip-box">
+    <navigator url="../my_info/my_info" hover-class='none' class="vip-info">
+      <view class="avatar">
+        <tex class="iconfont icon-huiyuanguanli50-copy"></tex>
+      </view>
+      <view class="info-data">
+        <view>会员姓名</view>
+        <view class='phone'>13285648754</view>
+      </view>
+      <text class="iconfont icon-you"></text>
+    </navigator>
+    <view class="vip-more">
+      <block  wx:for="{{vip_more}}" wx:key="vip">
+        <navigator class='more_item' url="{{item.url}}" >
+          <text class="iconfont {{item.style}}"></text>{{item.name}}
+        </navigator>
+      </block>
+    </view>
+  </view>
+
+  <view class="vip-box">
+    <block wx:for="{{navData}}" wx:key="nav">
+      <navigator class='nav_item' hover-class='none' url="{{item.url}}">
+        <view class="nav-icon {{item.background}}"><text class="iconfont {{item.icon}}"></text></view>
+        <text class="name">{{item.name}}</text>
+        <text class="iconfont icon-you"></text>
+      </navigator>
+    </block>
+  </view>
+
+</view>

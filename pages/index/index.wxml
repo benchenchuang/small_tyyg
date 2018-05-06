@@ -1,0 +1,53 @@
+<!--index.wxml-->
+<!-- banner -->
+<view class='swiper'>
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-color="{{indicatorColor}}" indicator-active-color="{{ActiveColor}}" circular="{{circular}}">
+    <block wx:for="{{banners}}" wx:key="banner">
+      <navigator hover-class="none" url='{{item.link}}'>
+        <swiper-item>
+          <image src="{{item.image}}" class="slide-image"></image>
+        </swiper-item>
+      </navigator>
+    </block>
+  </swiper>
+</view>
+
+<!--navigator-->
+<view class='nav_box'>
+  <view class='side_nav'>
+    <navigator class='nav_item nav_vip' hover-class='none' url='../personal/personal'>
+      <view class='nav_middle'>
+        <text class='iconfont icon-vip'></text>
+        <view>会员中心</view>
+      </view>
+    </navigator>
+    <navigator class='nav_item nav_charge' hover-class='none' url=''>
+      <view class='nav_middle'>
+        <text class='iconfont icon-chongzhi'></text>
+        <text>在线充值</text>
+      </view>
+    </navigator>
+  </view>
+  <view class='right_nav'>
+    <navigator class='nav_item nav_command' hover-class='none' url=''>
+      <view class='nav_middle'>
+        <text class='iconfont icon-saomayonghu'></text>
+        <text>推荐会员</text>
+      </view>
+    </navigator>
+    <navigator class='nav_item nav_code' hover-class='none' url=''>
+      <view class='nav_middle'>
+        <text class='iconfont icon-guifansaoma'></text>
+        <text>扫码服务</text>
+      </view>
+    </navigator>
+    <navigator class='nav_item nav_tickets' hover-class='none' url=''>
+      <view class='nav_middle'>
+        <text class='iconfont icon-youhuiquan'></text>
+        <text>我的券包</text>
+      </view>
+    </navigator>
+  </view>
+</view>
+
+

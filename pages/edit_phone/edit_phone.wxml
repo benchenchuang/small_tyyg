@@ -1,0 +1,44 @@
+<!--pages/edit_phone/edit_phone.wxml-->
+<view class="info-list">
+  <view class="info-item">
+    <text class="info-left">旧手机号</text>
+    <input type="text" class="info-right" value="{{old_phone}}" disabled='true'/>
+  </view>
+
+  <checkbox-group class='free-check' bindchange="checkChange">
+        <checkbox value="{{is_old}}" name="is_old" id='is_old' checked="{{is_old}}"></checkbox>
+        <label class="free-text" for='is_old'>是否能接收原手机号吗</label>
+  </checkbox-group>
+
+  <view class='code_box' wx:if="{{is_old}}">
+    <view class='code_num'>
+      <input type='number' placeholder='请输入验证码'/>
+    </view>
+    <button class='get_code' id='0' plain='true' bindtap="getOldCode" disabled="{{codeDis1}}">
+      <text hidden="{{flag1 != true || phoneCode == '获取验证码'}}">重发</text>
+      {{phoneCode}}
+      <text hidden="{{phoneCode == '获取验证码'}}">S</text>
+    </button>
+  </view>
+
+  <view class="info-item">
+    <text class="info-left">新手机号</text>
+    <input type="text" class="info-right" value="{{new_phone}}" placeholder='请输入新手机号'/>
+  </view>
+
+  <view class='code_box'>
+    <view class='code_num'>
+      <input type='number' placeholder='请输入验证码'/>
+    </view>
+    <button class='get_code' id='1' plain='true' bindtap="getNewCode" disabled="{{codeDis2}}">
+      <text hidden="{{flag2 != true || phoneCode == '获取验证码'}}">重发</text>
+      {{phoneCode}}
+      <text hidden="{{phoneCode == '获取验证码'}}">S</text>
+    </button>
+  </view>
+  
+</view>
+
+<view class="form-btn">
+    <button type="primary" class='save_phone'> 保存 </button>
+</view>

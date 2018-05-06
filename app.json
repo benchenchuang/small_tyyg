@@ -1,0 +1,17 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/personal/personal",
+    "pages/my_info/my_info",
+    "pages/edit_phone/edit_phone",
+    "pages/login/login",
+    "pages/information/information"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#e03232",
+    "navigationBarTitleText": "天语雅阁",
+    "navigationBarTextStyle": "white"
+  }
+}

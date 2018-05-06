@@ -1,0 +1,144 @@
+/* pages/personal/personal.wxss */
+.vip-box{
+    padding:0 30rpx;
+    border-bottom: 20rpx solid #f5f5f5;
+}
+.vip-info{
+    position: relative;
+    display: table;
+    width: 100%;
+    padding: 40rpx 0;
+    border-bottom: 2rpx solid #e5e5e5;
+}
+.vip-info .avatar{
+    width: 100rpx;
+    height: 100rpx;
+    text-align: center;
+    line-height: 100rpx;
+    border-radius: 50%;
+    background: #e03232;
+}
+.avatar .iconfont{
+    font-size: 76rpx;
+    color: #fff;
+}
+.vip-info .info-data{
+    display: table-cell;
+    width: 100%;
+    padding-left: 30rpx;
+    vertical-align: middle;
+    font-size: 32rpx;
+    color: #333;
+    line-height: 1.6;
+}
+.info-data .phone{
+    font-size: 28rpx;
+    color: #888;
+}
+.vip-info > .iconfont{
+    position: absolute;
+    top: 50%; 
+    right: 0; 
+    color: #999;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.vip-more{
+    width: 100%;
+    display: flex;
+    display: -webkit-flex;
+}
+.vip-more .more_item{
+    flex: 1;
+    -webkit-flex:1;
+    margin: 20rpx 0;
+    font-size: 26rpx;
+    color: #444;
+    text-align: center;
+}
+.more_item .iconfont{
+    font-size: 60rpx;
+    padding-right: 20rpx;
+    vertical-align: middle;
+}
+.vip-more .more_item:first-child{
+    border-right: 2rpx solid #e5e5e5;
+    box-sizing: border-box;
+}
+.c-yellow{
+    color: #f9bc17;
+}
+.c-green{
+    color: #98da50;
+}
+
+.nav_item{
+    position: relative;
+    display: block;
+    padding:30rpx 0;
+    height: 60rpx;
+    line-height: 60rpx;
+    color: #666;
+    border-bottom: 1px solid #e5e5e5;
+    overflow: hidden;
+}
+.nav_item .name{
+  font-size: 30rpx;
+}
+.nav_item:last-child{
+    border-bottom: none;
+}
+.nav_item .nav-icon{
+  float: left;
+  margin-right: 20rpx;
+  width: 60rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  color: #fff;
+  text-align: center;
+  border-radius: 8rpx;
+}
+.nav-icon .iconfont{
+  font-size: 40rpx;
+}
+.nav_item .icon-you{
+  float: right;
+  color: #bbb;
+}
+.bg-yellow{
+    background: #ffba00;
+}
+.bg-blue{
+    background: #48d3f6;
+}
+.bg-pink{
+    background: #ff8793;
+}
+.bg-purple{
+    background: #a4abff;
+}
+.bg-green{
+    background: #97da4e;
+}
+.bg-zise{
+    background: #7265ab;
+}
+.bg-fense{
+    background: #ff80c2;
+}
+.bg-qianse{
+    background: #00d3c2;
+}
+.info-list .info-left{
+    font-size: 0.26rem;
+    color: #333;
+}
+.info-list .info-right{
+    float: right;
+    text-align: right;
+    width: 70%;
+    height: 60rpx;
+    line-height: 60rpx;
+    font-size: 28rpx;
+    color: #666;
+}

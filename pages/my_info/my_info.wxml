@@ -1,0 +1,40 @@
+<!--pages/my_info/my_info.wxml-->
+<view class="info-list">
+  <view class="info-item">
+    <text class="info-left">姓名</text>
+    <input type="text" class="info-right" value="{{name}}"/>
+  </view>
+  <view class="info-item">
+    <text class="info-left">手机号</text>
+    <input type="text" class="info-right" value="{{phone}}" disabled='true'/>
+  </view>
+  <view class="info-item">
+    <text class="info-left">身份证</text>
+    <input type="text" class="info-right" value="{{certify}}" disabled='true'/>
+  </view>
+  <view class="info-item">
+    <text class="info-left">性别</text>
+    <picker class="info-right" bindchange="pickerSex" value="{{sex}}" range="{{sexData}}">
+      <view class="picker">
+          {{sex}}
+      </view>
+    </picker>
+  </view>
+  <view class="info-item">
+    <text class="info-left">生日</text>
+    <picker class="info-right" mode="date" value="{{date}}" start="1960-01-01" end="2030-12-31" bindchange="dateateChange">
+      <view class="picker">
+        {{date}}
+      </view>
+    </picker>
+  </view>
+  <view class="info-item">
+    <text class="info-left">地址</text>
+    <input type="text" class="info-right" value="{{address}}"/>
+  </view>
+</view>
+
+<view class="form-btn">
+    <button type="primary" class='info_btn' bindtap="saveInfo()"> 保存 </button>
+    <navigator url='../edit_phone/edit_phone' hover-class='none' class='info_btn'> 修改手机号 </navigator>
+</view>
