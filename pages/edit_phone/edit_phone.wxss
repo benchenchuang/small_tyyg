@@ -7,7 +7,7 @@
 }
 .free-check{
   margin: 30rpx 0;
-  font-size: 28rpx;
+  font-size: 32rpx;
   color: #666;
   line-height: 48rpx;
 }

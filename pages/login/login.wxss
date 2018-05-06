@@ -40,7 +40,7 @@
     line-height: 60rpx;
     padding-left: 20rpx;
     box-sizing: border-box;
-    font-size: 28rpx;
+    font-size: 32rpx;
     color: #444;
 }
 .section-item .get-code-box{
@@ -56,8 +56,9 @@
   font-size: 16px;
   color: #e03232!important;
   border-color: #e03232!important;
+  height: 90rpx!important;
+  line-height: 90rpx!important;
   border-radius: 80rpx;
-  /* background: #fff!important; */
 }
 .btn-sure{
   font-size: 16px;

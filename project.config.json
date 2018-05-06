@@ -12,8 +12,8 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "1.9.98",
-	"appid": "touristappid",
-	"projectname": "ttyg",
+	"appid": "wx6d9105844616e22d",
+	"projectname": "%E5%A4%A9%E8%AF%AD%E9%9B%85%E9%98%81",
 	"condition": {
 		"search": {
 			"current": -1,
@@ -32,7 +32,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 4,
+			"current": 5,
 			"list": [
 				{
 					"id": -1,

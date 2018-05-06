@@ -19,9 +19,21 @@ Page({
       sex: sexData[e.detail.value]
     })
   },
-  dateateChange:function(e){
+  dateChange:function(e){
     this.setData({
       date: e.detail.value
+    })
+  },
+  getCenterLocation: function () {
+    var that = this;
+    wx.chooseLocation({
+      type: 'gcj02', //返回可以用于wx.openLocation的经纬度
+      success: function (res) {
+        var address = res.address;
+        that.setData({
+          address: address
+        })
+      }
     })
   },
   /**

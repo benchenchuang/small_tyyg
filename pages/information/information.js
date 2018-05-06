@@ -5,9 +5,52 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+    sexData: ['男', '女'],
+    name:'',
+    certify:'',
+    sex:'男',
+    date: '',
+    address:''
   },
-
+  nameChange:function(e){
+    this.setData({
+      name:e.detail.value
+    });
+  },
+  certifyChange: function (e) {
+    this.setData({
+      certify: e.detail.value
+    });
+  },
+  pickerSex: function (e) {
+    var sexData = this.data.sexData;
+    this.setData({
+      sex: sexData[e.detail.value]
+    })
+  },
+  dateChange: function (e) {
+    this.setData({
+      date: e.detail.value
+    })
+  },
+  getCenterLocation:function(){
+    var that=this;
+    wx.chooseLocation({
+      type: 'gcj02', //返回可以用于wx.openLocation的经纬度
+      success: function (res) {
+        var address = res.address;
+        that.setData({
+          address: address
+        })
+      }
+    })
+  },
+  saveInfo:function(){
+    
+    wx.redirectTo({
+      url: '../index/index'
+    }) 
+  },
   /**
    * 生命周期函数--监听页面加载
    */

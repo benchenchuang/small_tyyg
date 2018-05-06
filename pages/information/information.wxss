@@ -1,1 +1,29 @@
 /* pages/information/information.wxss */
+.info_wrap{
+  padding: 0 30rpx;
+}
+.info_item{
+  display: flex;
+  display: -webkit-flex;
+  line-height: 60rpx;
+  padding: 20rpx 0;
+  border-bottom: 1px solid #e4e4e4;
+}
+.info_item .iconfont{
+  font-size: 48rpx;
+  color: #666;
+  padding-right: 30rpx;
+}
+.info_content{
+  flex:1;
+  -webkit-flex:1;
+}
+.picker,
+.info_content input{
+  font-size: 32rpx;
+  color: #333;
+}
+.picker_place{
+  font-size: 30rpx;
+  color: #888;
+}

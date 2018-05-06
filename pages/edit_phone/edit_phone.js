@@ -37,7 +37,7 @@ Page({
     var _this = this
     if (telephone.length != 11 || isNaN(telephone)) {
       wx.showToast({
-        title: '请输入有效的手机号码',
+        title: '请输入有效号码',
         icon: "loading",
         duration: 2000
       })

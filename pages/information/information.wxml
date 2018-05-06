@@ -1,2 +1,50 @@
 <!--pages/information/information.wxml-->
-<text>pages/information/information.wxml</text>
+<view class='info_wrap'>
+  <view class='info_item'>
+    <text class='iconfont icon-zhanghao'></text>
+    <view class='info_content'>
+      <input type='text' bindinput='nameChange' placeholder='请输入用户名' value="{{name}}"/>
+    </view>
+  </view>
+  <view class='info_item'>
+    <text class='iconfont icon-shenfenrenzheng'></text>
+    <view class='info_content'>
+      <input type='number' bindinput='certifyChange' placeholder='请输入身份证号码' value="{{certify}}"/>
+    </view>
+  </view>
+  <view class='info_item'>
+    <text class='iconfont icon-xingbie'></text>
+    <picker class="info_content" bindchange="pickerSex" value="{{sex}}" range="{{sexData}}">
+      <view class="picker">
+          {{sex}}
+      </view>
+    </picker>
+  </view>
+
+  <view class='info_item'>
+    <text class='iconfont icon-shengri'></text>
+    <picker class="info_content" mode="date" value="{{date}}" start="1960-01-01" end="2030-12-31" bindchange="dateChange">
+      <view wx:if="{{date}}" class="picker">
+        {{date}}
+      </view>
+      <view wx:else class="picker_place">
+       选择出生日期
+      </view>
+    </picker>
+  </view>
+
+  <view class='info_item'>
+    <text class='iconfont icon-dizhi'></text>
+    <view class="info_content" bindtap="getCenterLocation">
+      <view wx:if="{{address}}" class="picker">
+        {{address}}
+      </view>
+      <view wx:else class="picker_place">
+       选择地址
+      </view>
+    </view>
+  </view>
+</view>
+<view class='btn_common'>
+  <button class='submit_btn' bindtap='saveInfo'>提 交</button>
+</view>
